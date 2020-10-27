@@ -1,7 +1,8 @@
 .recipe {
     border-radius: 10px;
     box-shadow: 0px 5px 20px rgb(71,71,71);
-    margin: 20px;
+    margin: 30px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -11,9 +12,205 @@
 
 }
 
+h1 {
+    text-align: center;
+}
+
 .image {
     border-radius: 50%;
     width: 100px;
     height: 100px;
+ 
     
+}
+
+ol {
+    counter-reset: list;
+}
+ol > li {
+    list-style: none;
+    list-style-position: inside;
+    text-indent: -1em;
+}
+ol > li:before {
+    content: counter(list) ") ";
+    counter-increment: list;
+   
+}
+
+li {
+    line-height: 1.5;
+    font-size: 20px;
+   
+}
+
+p {
+  font-weight: 800;
+  font-size: 22px;
+}
+
+@media (min-width: 1200px) {
+    h1{
+        font-size: 45px;
+    }
+    li {
+        line-height: 1.5;
+        font-size: 39px;
+       
+    }
+
+    p {
+        font-size: 36px;
+      }
+      .image {
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin: 0 auto;
+        
+    }   
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .recipe {
+        padding: 7px;
+        margin: 7px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+
+    li {
+        font-size: 29px;
+        padding: 0;
+        line-height: 1.25;
+  }
+    p {
+        font-size: 26px;
+    }
+    .image {
+        width: 127px;
+        height: 127px;
+        display: block;
+        margin: 0 auto;
+        
+    }   
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .recipe {
+        padding: 7px;
+        margin: 7px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+
+    li {
+        font-size: 24px;
+        padding: 0;
+        line-height: 1.25;
+  }
+    p {
+        font-size: 24px;
+    }
+    .image {
+        width: 127px;
+        height: 127px;
+        display: block;
+        margin: 0 auto;
+        
+    }   
+}
+
+@media (max-width: 767px) {
+    .recipe {
+        padding: 10px;
+        margin: 10px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    li {
+        font-size: 21px;
+        padding: 0;
+        line-height: 1.2;
+  }
+    p {
+        font-size: 22px;
+    }
+    .image {
+        width: 125px;
+        height: 125px;
+        display: block;
+        margin: 0 auto;
+        
+    }
+
+
+}
+
+@media  (max-width: 576px) {
+
+    .recipe {
+        padding: 10px;
+        margin: 10px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+
+    ol > li {
+        list-style: none;
+        list-style-position: inside;
+        text-indent: -1.0em;
+    }
+    li {
+        font-size: 17.5px;
+        padding: 0;
+        line-height: 1.15;
+  }
+    p {
+        font-size: 15px;
+    }
+    .image {
+        width: 120px;
+        height: 120px;
+        display: block;
+        margin: 0 auto;
+        
+    }
+} 
+
+@media  (max-width: 320px) {
+    .recipe {
+        padding: 10px;
+        margin: 10px;
+    }
+    h1 {
+        font-size: 16px;
+    }
+
+    ol > li {
+        list-style: none;
+        list-style-position: inside;
+        text-indent: -1.0em;
+    }
+    li {
+        font-size: 14px;
+        padding: 0;
+        line-height: 1.2;
+  }
+    p {
+        font-size: 13px;
+    }
+    .image {
+        width: 75px;
+        height: 75px;
+        display: block;
+        margin: 0 auto;
+        
+    }
 }

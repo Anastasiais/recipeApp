@@ -11,7 +11,7 @@ const Recipe =({title, calories, image, ingredients})=> {
                 <li key={index}>{ingredient.text}</li>
                ))}   
            </ol>
-           <p>{calories}</p>
+           <p> Calories: {Math.round(calories)}</p>
             <img className={style.image} src={image} alt="" />
      </div>
    )
