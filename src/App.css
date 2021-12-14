@@ -7,7 +7,7 @@
   min-height: 10vh;
   display: flex;
   justify-content:center;
-  align-items: center;
+  align-items: self-end;
 }
 
 .search-bar{
