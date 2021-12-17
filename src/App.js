@@ -4,12 +4,12 @@ import './App.css';
 
 const App = () => {
 
-  const APP_ID = "022c4001"
-  const APP_KEY = "895297ab7bed778d51ea1a5831b838f9"
+  const APP_ID = '022c4001'
+  const APP_KEY = '895297ab7bed778d51ea1a5831b838f9'
 
   const [recipes, setRecipes] = useState([])
-  const [search, setSearch] = useState("")
-  const [query, setQuery] = useState("")
+  const [search, setSearch] = useState('')
+  const [query, setQuery] = useState('')
 
   useEffect(() => {
     const getRecipes = async ()=> {
