@@ -9,16 +9,13 @@ const Recipe =({title, calories, image, ingredients})=> {
            <ol>
                {ingredients.map((ingredient, index) => (
                 <li key={index}>{ingredient.text}</li>
-               ))}   
+               ))}
            </ol>
            <p> Calories: {Math.round(calories)}</p>
             <img className={style.image} src={image} alt="" />
      </div>
    )
 }
-
-
-
 
 
 export default Recipe

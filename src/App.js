@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react'
 import Recipe from './Recipe'
-import './App.css';
+import './App.css'
 
 const App = () => {
 
@@ -52,7 +52,7 @@ const getSearch = e => {
       ))}
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
